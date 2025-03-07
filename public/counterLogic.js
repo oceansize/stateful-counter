@@ -6,8 +6,8 @@ async function fetchStartTime() {
       // Set container label
       document.querySelector('.container-label').textContent = `Container: ${data.containerLabel}`;
 
-      // Apply background color to splash-container
-      document.querySelector('.splash-container').style.backgroundColor = data.containerColor;
+      // Apply background colour to splash-container
+      document.querySelector('.splash-container').style.backgroundColor = data.containerColour;
 
       // Start timer logic
       const startTime = new Date(data.startTime);

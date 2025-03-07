@@ -6,16 +6,16 @@ const PORT = process.env.PORT || 3000;
 // Store container start time
 const containerStartTime = Date.now();
 
-// Read optional container name and color from environment variables
+// Read optional container name and colour from environment variables
 const containerLabel = process.env.CONTAINER_LABEL || "Unnamed Container";
-const containerColor = process.env.CONTAINER_COLOR || "#1f8dd6"; // Default blue color
+const containerColour = process.env.CONTAINER_COLOUR || "#1f8dd6"; // Default blue colour
 
-// API endpoint to provide container start time, name, and color
+// API endpoint to provide container start time, name, and colour
 app.get('/start-time', (req, res) => {
     res.json({
         containerLabel: containerLabel,
         startTime: containerStartTime,
-        containerColor: containerColor
+        containerColour: containerColour
     });
 });
 
@@ -24,5 +24,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, () => {
     console.log(`Container "${containerLabel}" started at ${new Date(containerStartTime)} on port ${PORT}`);
-    console.log(`Using background color: ${containerColor}`);
+    console.log(`Using background colour: ${containerColour}`);
 });
