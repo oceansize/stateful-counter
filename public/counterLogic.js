@@ -3,7 +3,13 @@ async function fetchStartTime() {
       const response = await fetch('/start-time');
       const data = await response.json();
 
-      document.querySelector('.container-label').textContent = `Container "${data.containerLabel}"`;
+      // Set container label
+      document.querySelector('.container-label').textContent = `Container: ${data.containerLabel}`;
+
+      // Apply background color to splash-container
+      document.querySelector('.splash-container').style.backgroundColor = data.containerColor;
+
+      // Start timer logic
       const startTime = new Date(data.startTime);
 
       function updateTimer() {
