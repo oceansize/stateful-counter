@@ -13,9 +13,9 @@ const containerColour = process.env.CONTAINER_COLOUR || "#1f8dd6"; // Default bl
 // API endpoint to provide container start time, name, and colour
 app.get('/start-time', (req, res) => {
     res.json({
-        containerLabel: containerLabel,
+        containerLabel,
         startTime: containerStartTime,
-        containerColour: containerColour
+        containerColour
     });
 });
 
