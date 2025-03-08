@@ -6,6 +6,10 @@ The application simply keeps a record of how long it has been running, by consis
 
 You can pass environment variables when starting the server, to affect the background colour of the app, and give the instance a label. This will be useful later when create multiple instances in Docker containers.
 
+## Screenshots
+
+![Screenshot of the 'stateful-counter' application, showing time elapsed since start.](https://github.com/oceansize/stateful-counter/blob/main/readme-images/counter-screenshot.png?raw=true)
+
 ## Instructions for Use
 
 Assuming that you have **cloned this repo** and have a [working installation of NodeJS](https://nodejs.org/en/download), you can set up & run the app locally with the following commands:
