@@ -21,7 +21,7 @@ async function getStartTimeData() {
 
 // Update the container label
 function updateContainerLabel(label) {
-    document.querySelector('.container-label').textContent = `Container "${label}"`;
+    document.querySelector('.container-label').textContent = `Container "${label}" has been`;
 }
 
 // Update the splash container background color
