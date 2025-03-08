@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "css-color-names": "^1.0.1",
     "express": "^4.21.2"
   }
 }
