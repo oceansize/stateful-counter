@@ -48,3 +48,5 @@ function startTimer(startTime) {
 
 // Initialize the app
 fetchStartTime();
+
+// This comment should be not be here.
